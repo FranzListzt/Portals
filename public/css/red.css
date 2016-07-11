@@ -1,0 +1,38 @@
+::-moz-selection {
+    background: #e85050;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #e85050;
+    text-shadow: none;
+    color: #fff;
+}
+.navbar-default.style1 .navbar-nav > .open > a, .navbar-default.style1 .navbar-nav > .open > a:hover, .navbar-default.style1 .navbar-nav > .open > a:focus{color: #fff;}
+.style1 .dropdown-menu > li > a:hover, .style1 .dropdown-menu > li > a:focus{color: #fff;}
+a, .pageXofY .pageX, .pricing .bestprice .name, .filter li a:hover, .widget_links ul li a:hover, #contacts a:hover, .title-color, .ms-staff-carousel .ms-staff-info h4, .filter li a:hover, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, a.go-about:hover, .text_color, .center-icon i, .navbar-nav .dropdown-menu a:hover, .profile .profile-name, #elements h4, #contact li a:hover, #agency-slider h5, .ms-showcase1 .product-tt h3, .filter li a.active, .contacts li i, .big-icon i, .navbar-default.dark .navbar-brand:hover,.navbar-default.dark .navbar-brand:focus, a.p-button.border:hover, .navbar-default.style2 .navbar-nav > li > a.selected, .navbar-default.style2 .navbar-nav > li > a.selected:hover, .navbar-default.style2 .navbar-nav > li > a.selected, .navbar-default.style2 .navbar-nav > .open > a,.navbar-default.style2 .navbar-nav > .open > a:hover, .navbar-default.style2 .navbar-nav > .open > a:focus, .style2 .dropdown-menu > li > a:hover, .style2 .dropdown-menu > li > a:focus, .navbar-default.dark.style2 .dropdown-menu > li > a:hover, a.social:hover:before, .symbol.colored i, .icon-nofill, .slidecontent-bi .project-title-bi p a:hover, .grid .figcaption a.thumb-link:hover, .tp-caption a:hover{
+  color: #e85050;
+}
+a.sf-button.hide-icon, .readmore, .tabs li.current, .readmore:hover, .navbar-default .navbar-nav > .open > a,.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, a.p-button:hover, a.p-button.colored, .navbar-default.style1 .navbar-nav > li > a.selected, .light #contacts a.p-button, .tagcloud a:hover, .rounded.fill, .colored-section, .pricing .bestprice .price, .pricing .bestprice .signup, .signup:hover, .divider.colored, .flex-control-paging li a.flex-active, .services-graph li span, .no-touch .hi-icon-effect-1a .hi-icon:hover, .hi-icon-effect-1b .hi-icon:hover, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .no-touch .hi-icon-effect-1b .hi-icon:hover, .symbol.colored .line-left, .symbol.colored .line-right, .projects-overlay #projects-loader, .tp-bullets.simplebullets .bullet:hover, .tp-bullets.simplebullets .bullet.selected, .panel-group .panel.active .panel-heading{
+	background-color:#e85050;
+}
+.widget_posts .tabs li.current, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{border: 1px solid #e85050;}
+.hi-icon-effect-1 .hi-icon:after{box-shadow: 0 0 0 3px #e85050;}
+.colored-section:after {border: 20px solid #e85050;}
+.filter li a.active, .filter li a:hover, .panel-group .panel.active .panel-heading{border:1px solid #e85050}
+.ms-skin-light-6 .ms-tooltip-point .ms-point-center {border: solid 2px #e85050;}
+.ms-skin-light-6 .ms-tooltip-point .ms-point-border{
+	background: #e85050;
+	background: #e85050;
+}
+a.p-button.colored:hover{background-color: #d14334;}
+.navbar-default.style2.border .navbar-nav > li > a.selected:before, .navbar-default.style2.border .navbar-nav > li > a.selected:hover, .navbar-default.style2.border .navbar-nav > li > a.selected{
+	border-bottom: 1px solid #e85050;
+}
+.bs-callout-theme-color {
+	background-color: #fed2cd;
+	border-color: #e85050;
+}
+.doubleborder{
+	border: 6px double #e85050;
+}

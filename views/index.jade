@@ -1,0 +1,977 @@
+doctype html
+html
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    // <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+    meta(name='description', content='上海歆音信息科技有限公司集项目外包、产品研发、新媒体推广、产品运营于一体')
+    meta(name='author', content='上海歆音信息科技有限公司')
+    link(rel='shortcut icon', href='images/favicon.png')
+    title 歆音科技 | 提供"产品-UI-开发-运营"一站式服务
+    // LOAD CSS
+    link(rel='stylesheet', type='text/css', href='css/normalize.css')
+    link(rel='stylesheet', type='text/css', href='css/default.css')
+    link(href='css/bootstrap.css', rel='stylesheet')
+    link(href='css/paris.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='css/animate.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='css/icons-font.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='css/masterslider.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='css/style.css', rel='stylesheet', type='text/css', media='screen')
+    link(href='css/style1.css', rel='stylesheet', type='text/css', media='screen')
+    // SLIDER REVOLUTION 4.x DESIGNARE CSS SETTINGS
+    link(rel='stylesheet', type='text/css', href='css/designare-settings.css', media='screen')
+    // COLORS
+    link(href='css/red.css', rel='stylesheet', type='text/css', media='screen', title='red')
+    // USED FOR RESPONSIVE ADJUSTMENTS
+    link(href='css/resize.css', rel='stylesheet', type='text/css', media='screen')
+    // carousel
+    link(href='css/owl.carousel.css', rel='stylesheet', type='text/css')
+    link(href='css/owl.theme.css', rel='stylesheet', type='text/css')
+    link(href='css/owl.transitions.css', rel='stylesheet', type='text/css')
+    // <link rel="stylesheet" href="css/ddfullscreenslider.css">
+    // <script src="js/jquery.mousewheel.min.js"></script>
+    // <script src="js/ddfullscreenslider.js"></script>
+    style(type='text/css').
+      #owl-demo .item{
+        margin: 3px;
+      }
+      #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      body{
+        overflow-x:hidden;
+      }
+      #first,#two,#three,#four{ /* CSS for each slide */
+        width: 100%;
+        height: 100%;
+        display: block;
+        font-family: 'Lato', sans-serif; /* Use google font */
+        font-size: 1.2em;
+        line-height: 2em;
+        color: white;
+        overflow: hidden;
+        -webkit-box-sizing: border-box; /* include padding/ border as part of declared menu width */
+        -moz-box-sizing: border-box;
+        z-index: 1000;
+        -webkit-transform: translate3d(0, 0, 0); /* to prevent flickering in iOS */
+      }
+    // LOAD GOOGLE FONTS
+    //
+      link href='http://fonts.googleapis.com/css?family=Raleway:100,300,600,800' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800' rel='stylesheet' type='text/css'
+    //if lt IE 9
+      script(src='../../assets/js/ie8-responsive-file-warning.js')
+    // HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    // Load JQuery at this point if you use the Numerical Increments in your page
+    script(src='js/jquery.min.js', type='text/javascript')
+    script(src='js/utils.js', type='text/javascript')
+    // SLIDER REVOLUTION 4.x SCRIPTS
+    script(type='text/javascript', src='js/jquery.themepunch.plugins.min.js')
+    script(type='text/javascript', src='js/jquery.themepunch.revolution.min.js')
+    // CAROUSEL SCRIPTS
+    script(type='text/javascript', src='js/owl.carousel.js')
+    // <script type="text/javascript"  src="js/jquery-1.8.3.min.js"></script>
+    script(type='text/javascript', src='js/autoscroll.js')
+    script(src='js/jquery.mousewheel.min.js')
+    script(src='js/ddfullscreenslider.js')
+    script(src='js/l-by-l.min.js')
+  body
+    //
+      BEGIN: HEADER BAR
+      OPTIONS: "dark", "style2", "style1", "border" and "hide-on-start"
+    script.
+      //		var fss;
+      //		$(function() {
+      //			fss = new ddfullscreenslider({
+      //				sliderid: 'dowebok'
+      //			});
+      //		});
+    script.
+      //		$(function(){
+      //			window.autoscroll.interval = 25;
+      //			window.autoscroll.threshold = 100;
+      //			window.autoscroll.velocity = 5;
+      //			window.autoscroll.acceleration = 0;
+      //			window.autoscroll.start();
+      //		});
+    .navbar.navbar-default.style2.hide-on-start.navbar-fixed-top(role='navigation', style='z-index:99999')
+      // BEGIN: NAV-CONTAINER
+      .nav-container
+        .navbar-header
+          // BEGIN: TOGGLE BUTTON (RESPONSIVE)
+          button#Meu_button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only 隐藏导航菜单
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          script(type='text/javascript').
+            $(document).ready(function(){
+              $("#Meu_button").click(function(){
+                $("#Meu").show();
+              });
+            });
+          // BEGIN: LOGO
+          a.navbar-brand.nav-to(href='')
+            img(src='images/logo.png', alt='')
+        // BEGIN: MENU
+        #Meu.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.nav-to(href='#home-fsslider') 首页
+            li
+              a.nav-to(href='#about') 关于我们
+              ul.dropdown-menu
+                li
+                  a.nav-to(href='#about') 公司简介
+                li
+                  a.nav-to(href='#parallax-2') 服务客户
+                li
+                  a.nav-to(href='#ourworks') 公司业务
+            li
+              a.nav-to(href='#tailor') 定制开发
+            li
+              a.nav-to(href='#services') 社会化媒体营销及代运营
+            li
+              a.nav-to(href='#service-two') 移动商务应用
+            li
+              a.nav-to(href='#contacts') 联系我们
+        script(type='text/javascript').
+          $(document).ready(function(){
+            $("#Meu").click(function(){
+              $("#Meu").toggle();
+            });
+          });
+        // END: MENU
+      // END: NAV-CONTAINER
+    // END: HEADER BAR
+    #load
+    #dowebok.everything
+      section#home-fsslider.nav-boxes
+        #first.tp-banner-container
+          .tp-banner
+            ul
+              // SLIDE
+              li(data-transition='zoomin', data-slotamount='5', data-masterspeed='700')
+                // MAIN IMAGE
+                img(src='images/slide1.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                // Parallax pattern overlay
+                .parallax-overlay.parallax-overlay-pattern.soft
+                // LAYERS
+                .tp-caption.large_bold_white_25.text-center.customin.customout.start.tp-resizeme(data-x='center', data-hoffset='0', data-y='190', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+                  span.text_color 歆音科技
+                  |  企业IT技术服务提供商
+                // LAYER NR. 9
+                .tp-caption.lfb.text-center.customin.customout.tp-resizeme(data-x='center', data-hoffset='0', data-y='240', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1500', data-easing='Back.easeInOut', style='z-index: 6')
+                  h2 一整套的技术开发与运营解决方案
+                // LAYER NR. 9
+                #targetId.tp-caption.lfb(data-x='center', data-hoffset='0', data-y='258', data-speed='1000', data-start='2200', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6')
+                  img(src='images/pic_1.png')
+              // SLIDE
+              li(data-transition='zoomin', data-slotamount='5', data-masterspeed='700')
+                img(src='images/7.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                // Parallax pattern overlay
+                .parallax-overlay.parallax-overlay-pattern.soft
+                // LAYERS
+                .tp-caption.large_bold_white_25.text-center.customin.customout.start.tp-resizeme(data-x='center', data-hoffset='0', data-y='190', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+                  span.text_color 定制
+                  | 开发
+                // LAYER NR. 9
+                .tp-caption.lfb.text-center.customin.customout.tp-resizeme(data-x='center', data-y='260', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1500', data-easing='Back.easeInOut', style='z-index: 10')
+                  h2 量身打造，属于您的私人定制
+                // LAYER NR. 9
+                .tp-caption.lfb(data-x='center', data-hoffset='0', data-y='400', data-speed='1000', data-start='2200', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6')
+                  // a class="nav-to go-about" href="article-view.html">我们的案例</a
+                  a.nav-to.go-about(href='#tailor') 我们的案例
+              // SLIDE
+              li(data-transition='zoomout', data-slotamount='5', data-masterspeed='700')
+                img(src='images/2.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                // Parallax pattern overlay
+                .parallax-overlay.parallax-overlay-pattern.soft
+                // LAYERS
+                .tp-caption.large_bold_white_25.text-center.customin.customout.start.tp-resizeme(data-x='center', data-hoffset='0', data-y='190', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+                  | 社会化
+                  span.text_color 媒体营销
+                  |  及代运营
+                // LAYER NR. 9
+                .tp-caption.lfb.text-center.customin.customout.tp-resizeme(data-x='center', data-y='260', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1500', data-easing='Back.easeInOut', style='z-index: 6')
+                  h3 以微博/微信等自媒体为主的营销平台的应用
+                // LAYER NR. 9
+                .tp-caption.lfb(data-x='center', data-hoffset='0', data-y='400', data-speed='1000', data-start='2200', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6')
+                  a.nav-to.go-about(href='#masterslider-video') 我们的服务
+              // SLIDE
+              li(data-transition='slidedown', data-slotamount='5', data-masterspeed='700')
+                img(src='images/slide2.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                // Parallax pattern overlay
+                .parallax-overlay.parallax-overlay-pattern.soft
+                // LAYERS
+                .tp-caption.large_bold_white_25.text-center.customin.customout.start.tp-resizeme(data-x='center', data-hoffset='0', data-y='190', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+                  span.text_color
+                  |  移动商务应用
+                  br
+                  h1 企业产品/信息的展示利器
+                // LAYER NR. 9
+                .tp-caption.lfb.text-center.customin.customout.tp-resizeme(data-x='center', data-y='320', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1500', data-easing='Back.easeInOut', style='z-index: 6')
+                  h4 节约一张纸，还地球一片蓝天
+                // LAYER NR. 9
+                .tp-caption.lfb(data-x='center', data-hoffset='0', data-y='400', data-speed='1000', data-start='2200', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6')
+                  a.nav-to.go-about(href='#contacts') 马上体验
+              // SLIDE
+              li(data-transition='slideup', data-slotamount='5', data-masterspeed='700')
+                img(src='images/10.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+                // Parallax pattern overlay
+                .parallax-overlay.parallax-overlay-pattern.soft
+                // LAYERS
+                .tp-caption.large_bold_white_25.text-center.customin.customout.start.tp-resizeme(data-x='center', data-hoffset='0', data-y='190', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1000', data-easing='Back.easeInOut', data-endspeed='300')
+                  | "产品-UI-开发-运营"
+                  span.text_color 一站式
+                  |  服务
+                // LAYER NR. 9
+                .tp-caption.lfb.text-center.customin.customout.tp-resizeme(data-x='center', data-y='260', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1500', data-easing='Back.easeInOut', style='z-index: 6')
+                  h3 从容融入移动互联网时代
+                // LAYER NR. 9
+                .tp-caption.lfb(data-x='center', data-hoffset='0', data-y='400', data-speed='1000', data-start='2200', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6')
+                  a.nav-to.go-about(href='#contacts') 联系我们
+        script(type='text/javascript').
+          var revapi;
+          jQuery(document).ready(function() {
+            revapi = jQuery('.tp-banner').revolution(
+                    {
+                      delay:150000,
+                      startwidth:1170,
+                      startheight:500,
+                      hideThumbs:10,
+                      fullWidth:"off",
+                      stopAtSlide:1,
+                      fullScreen:"on",
+                      hideArrowsOnMobile:"on",
+                      touchenabled:"on",
+                      fullScreenOffsetContainer: "#header, #footer"
+                    });
+            //alert( $(window).height() +"  " + $(window).width());
+            //setTimeout(function(){
+            //var wW = $(window).width();
+            //if( wW > 1024 && wW <　1341  ){
+            //$('#targetId').css("top","300px");
+            //}
+            //},10000);
+          });
+        // END REVOLUTION SLIDER
+      // BEGIN: ABOUT SECTION
+      section#about.nav-boxes
+        // BEGIN: GREY SECTION WITH "light-text" TEXT AND "section-arrow-down"
+        #two.grey-section.dark-text.section-arrow-down
+          // BEGIN: CONTAINER
+          .container
+            div(style='')
+              .row
+                // BEGIN: ABOUT OUR AGENCY
+                #company-profile.col-xs-12.col-sm-6(style=' visibility: hidden; ')
+                  h3 公司简介
+                  p(style='')
+                    | 上海歆音信息科技有限公司，成立于2016年。公司专注于微电商系统及企业级商业应用开发，为客户提供
+                    a(href='#', style='cursor:default;', onclick='return false;') "产品-UI-开发-运营"一站式服务
+                    | ，通过
+                    | 不懈努力与勇于创新，公司已建成一整套移动互联网开发解决方案及联合运营服务体系。
+                  p(style='border-bottom: 5px;width: 100%;height: 100%;display: block') 目前，公司着眼于社会化媒体营销和创意，实现了从技术、内容到创意的一体化营销。
+                  .space
+                // BEGIN: ANIMATED SKILLS BARS
+                #team-power.col-xs-12.col-sm-6
+                  script.
+                    $(window).scroll(function () {
+                      if ($(this).scrollTop() > 100) {
+                        $('#company-profile').css("visibility", "visible").fadeIn(5000);
+                      } else {
+                        $('#company-profile').fadeOut();
+                      }
+                    });
+                  h3 团队力量
+                  // BEGIN: SKILLS DESIGN
+                  .col-xs-6.col-sm-6(style='padding-left:0;')
+                    // SKILL #01
+                    #skillbar-1.skillbar.clearfix.notinview(data-percent='99%')
+                      .skillbar-title
+                        span Java | Php
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27ccc0;')
+                        .pointerval
+                          span.value 99%
+                          span.pointer
+                      // End Skill Bar
+                    // SKILL #02
+                    #skillbar-2.skillbar.clearfix.notinview(data-percent='75%')
+                      .skillbar-title
+                        span MySQL | Oracle
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27ccc0;')
+                        .pointerval
+                          span.value 75%
+                          span.pointer
+                    // End Skill Bar
+                    // SKILL #03
+                    #skillbar-3.skillbar.clearfix.notinview(data-percent='75%')
+                      .skillbar-title
+                        span Linux | Unix
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27ccc0;')
+                        .pointerval
+                          span.value 75%
+                          span.pointer
+                    // End Skill Bar
+                  // END: SKILLS DESIGN
+                  // BEGIN: SKILLS CODE
+                  .col-xs-6.col-sm-6
+                    // SKILL #01
+                    #skillbar-4.skillbar.clearfix.notinview(data-percent='70%')
+                      .skillbar-title
+                        span Html5 Css3 Javascript
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27bbcc;')
+                        .pointerval
+                          span.value 70%
+                          span.pointer
+                    // End Skill Bar
+                    // SKILL #02
+                    #skillbar-5.skillbar.clearfix.notinview(data-percent='89%')
+                      .skillbar-title
+                        span IOS | Android
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27bbcc;')
+                        .pointerval
+                          span.value 89%
+                          span.pointer
+                    // End Skill Bar
+                    // SKILL #03
+                    #skillbar-6.skillbar.clearfix.notinview(data-percent='60%')
+                      .skillbar-title
+                        span Big Data | High Concurrency
+                      .skillbar-bar
+                        .skill-bar-percent(style='background: #27bbcc;')
+                        .pointerval
+                          span.value 60%
+                          span.pointer
+                    // End Skill Bar
+                  // END: SKILLS CODE
+                  //
+                    <div class="light">
+                    <div id="office-slider" class="flexslider">
+                    <ul class="slides">
+                    <li>
+                    <img src="images/office/of1.jpg" alt=""/>
+                    </li>
+                    <li>
+                    <img src="images/office/of2.jpg" alt=""/>
+                    </li>
+                    <li>
+                    <img src="images/office/of3.jpg" alt=""/>
+                    </li>
+                    </ul>
+                    </div>
+                    </div>
+                // END: ANIMATED SKILLS BARS
+              // END: ROW
+              .divider-contents
+              .space(style='')
+              #img-log.row
+                // BEGIN 4 COLUMNS / 12 COLUMNS (<768px)
+                .col-xs-12.col-sm-4
+                  // BEGIN: AGENCY FACTS
+                  #agency-slider.flexslider
+                    ul.slides
+                      // SLIDE #01
+                      li
+                        .big-icon
+                          i.fa.fa-cs
+                          .number
+                            | 诚实
+                            span.unit 负责
+                      // SLIDE #02
+                      li
+                        .big-icon
+                          i.fa.fa-jt(style='font-size:80px;')
+                          .number
+                            span.unit 脚踏
+                            | 实地
+                      // SLIDE #03
+                      li
+                        .big-icon
+                          i.fa.fa-kh
+                          .number
+                            span.unit 客户
+                            | 至上
+                      // SLIDE #04
+                      li
+                        .big-icon
+                          i.fa.fa-zy
+                          .number
+                            | 专业
+                            span.unit 服务
+                      // SLIDE #05
+                      li
+                        .big-icon
+                          i.fa.fa-yg
+                          .number
+                            span.unit 勇敢
+                            | 创新
+                  // END: AGENCY FACTS
+                // BEGIN 4 COLUMNS / 12 COLUMNS (<768px)
+                .col-xs-12.col-sm-4
+                  h4 公司宗旨
+                  p 帮助客户从容融入移动互联网时代，实现一体化的社会化媒体营销。
+                // BEGIN 4 COLUMNS / 12 COLUMNS (<768px)
+                .col-xs-12.col-sm-4
+                  h4 经营理念
+                  p 让人们更舒适、方便的体验移动互联带来的新生活。运用社会化媒介平台，开启全新的一体化营销模式。
+              // END ROW
+          // END CONTAINER
+          // START: PARALLAX | CLIENTS LOGOS
+          #parallax-2.parallax(style='background-image: url(images/parallax10.jpg);text-align:center; margin-top: 80px;')
+            .box-overlay-pattern
+              // Remove this line "overlay-pattern" if you don't want the overlay pattern
+              .overlay-pattern
+              // BEGIN: PARALLAX CONTENTS
+              .parallax-content.light-text
+                // BEGIN: LOGOS
+                .recent-clients
+                  .client-logos
+                    // Title here
+                    .section-title
+                      h3 服务客户
+                      .divider-small
+                        .divider.colored
+                    .container(style='/*width:80%;margin-left:10%;*/cursor:pointer;')
+                      #owl-carousel.owl-carousel
+                        .item
+                          img(src='images/client1.png', alt='Owl Image')
+                        .item
+                          img(src='images/client2.png', alt='Owl Image')
+                        .item
+                          img(src='images/client3.png', alt='Owl Image')
+                        .item
+                          img(src='images/client4.png', alt='Owl Image')
+                        .item
+                          img(src='images/client5.png', alt='Owl Image')
+                        .item
+                          img(src='images/client6.png', alt='Owl Image')
+                        .item
+                          img(src='images/client7.png', alt='Owl Image')
+                        .item
+                          img(src='images/client8.png', alt='Owl Image')
+                        .item
+                          img(src='images/client9.png', alt='Owl Image')
+                        .item
+                          img(src='images/client10.png', alt='Owl Image')
+                        .item
+                          img(src='images/client11.png', alt='Owl Image')
+                    // Your logos here
+                    //
+                      a href="#" class="animated flipInX"><img src="images/client1.png" alt=""></a>
+                      <a href="#" class="animated flipInX delay-200"><img src="images/client2.png" alt=""></a>
+                      <a href="#" class="animated flipInX delay-400"><img src="images/client3.png" alt=""></a>
+                      <a href="#" class="animated flipInX delay-600"><img src="images/client4.png" alt=""></a>
+                      <a href="#" class="animated flipInX delay-800"><img src="images/client5.png" alt=""></a
+                // End LOGOS
+              // END: PARALLAX CONTENTS
+          // END: PARALLAX
+          // BEGIN: TITLE STYLE 1
+          #ourworks.container.section-title
+            h2 公司业务
+            .divider.colored
+            h6#text-center-gsyw.text-center(style='display: none;')
+              | 上海歆音信息科技有限公司从事包括基于IOS和Android、WP等系统的咨询策划、应用设计、交互设计、到系统开发、营销推广、运维维护；基于微信的第三方平台开发、推广、运维。此外，还包括事件营销、品牌微博、微信等的
+              a(href='#services')
+                | 社会化营销推广和运营。
+                i.fa.fa-arrow-circle-o-down
+              | ",
+        // END: GREY SECTION
+        script(type='text/javascript').
+          $(document).ready(function(){
+            $("#text-center-gsyw").fadeIn("1000")
+            $("#owl-carousel").owlCarousel({
+              //autoPlay: 3000, //Set AutoPlay to 3 seconds
+              pagination:true,
+              items : 5,
+              itemsDesktop : [1199,5],
+              itemsDesktopSmall : [979,5],
+              scrollPerPage:true
+            });
+          });
+      // END: ABOUT SECTION
+      // BEGIN: SERVICES
+      section#tailor.nav-boxes
+        // BEGIN: "grey-section" WITH "section-arrow-down", "nopaddingbottom" AND "dark-text" TEXT
+        #three.light-section.nopaddingbottom.dark-text
+          // Title here
+          .section-title
+            h2
+              span.bold 定制开发
+            .divider.colored
+            h6.text-center
+              | 量身打造，属于您的私人定制——专注于企业商业应用APP一体化开发。
+              // a href="custom-tailor.html">查看详情</a
+              a(href='#') 查看详情
+          // BEGIN: SERVICES STYLE 1 CONTAINER
+          .container
+            div
+              // SERVICE #01
+              .col-xs-12.col-sm-4
+                .service
+                  // Icon Column
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn
+                      // Icon here
+                      i.glyphicons.gi-qixc
+                  // Description Column
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 微信二次开发
+                      p 结合微信应用接口，根据不同的行业、类型和定位，为客户打造一套具有特色的微信端视觉识别解决方案 。
+              // SERVICE #02
+              .col-xs-12.col-sm-4
+                .service
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn.delay-200
+                      i.glyphicons.gi-pp
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 电商解决方案
+                      p 针对品牌、行业特性提炼出了一系列微电商解决方案，涵盖了医药、鲜蔬、日常用品等众多与生活相关的行业领域。
+              // SERVICE #03
+              .col-xs-12.col-sm-4
+                .service
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn.delay-400
+                      i.glyphicons.gi-media
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 新媒体运营
+                      p
+                        | 把多年来累积的技术优势转化为企业新媒体平台的宣传优势，为企业量身打造强大的新媒体宣传体系。
+                        br
+                        br
+            div
+              // SERVICE #04
+              .col-xs-12.col-sm-4
+                .service
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn.delay-600
+                      i.glyphicons.gi-palce
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 地方性互动平台
+                      p 针对到达城市周边区域的受众人群，可以定向主动推送城市宣传信息及提供周边服务，辅以进行宣传。
+              // SERVICE #05
+              .col-xs-12.col-sm-4
+                .service
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn.delay-800
+                      i.glyphicons.gi-service
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 政府服务
+                      p 针对不同城市的招商引资、城市生活、政务互动，倾情打造完美服务模式，实现现代一体化管理。
+              // SERVICE #06
+              .col-xs-12.col-sm-4
+                .service
+                  .col-xs-12.col-md-2
+                    .rounded.fill.animated.bounceIn.delay-1000
+                      i.glyphicons.gi-shop
+                  .col-xs-12.col-md-10
+                    .text-left
+                      h5 特色移动客户端
+                      p 基于APP移动客户端产品，为客户提供设计、UI、技术开发、运营等系统解决方案。
+            // END ROW
+          // END CONTAINER
+        // END GREY SECTION
+        // START: PARALLAX - PROCESS ICONS
+        #parallax-1.parallax(style='background-image: url(images/process.jpg);text-align:center;')
+          .box-overlay-pattern
+            // Remove this line "overlay-pattern" if you don't want the overlay pattern
+            .overlay-pattern
+            // BEGIN: PARALLAX CONTENTS
+            .parallax-content.light-text
+              // TITLE STYLE 1
+              .section-title
+                h2 我们的开发流程
+                .divider-small
+                  .divider.colored
+              // BEGIN: ICONS BORDER HOVER | options "dark-bg", "light-bg", "light-bg border"
+              section#set-1.dark-bg
+                // Set 1a or 1b for effects on hover "hi-icon-effect-1a"
+                .hi-icon-wrap.hi-icon-effect-1.hi-icon-effect-1a
+                  // PROCESS ICON #01
+                  .hi-icon.animated.fadeInUp(style='cursor:default;')
+                    // Icon here
+                    i.fa.fa-search
+                    // Description Tooltip here
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <p>关于需求分析的简介</p>
+                      </div>
+                      </div
+                    h6 需求分析
+                  // PROCESS ICON #02
+                  .hi-icon.animated.fadeInUp.delay-200(style='cursor:default;')
+                    i.fa.fa-compass
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <h5><span class="text_color">关于信息架构的简介</span></h5>
+                      <ul>
+                      <li><i class="fa fa-check-circle-o"></i> 创意</li>
+                      <li><i class="fa fa-check-circle-o"></i> 策划</li>
+                      <li><i class="fa fa-check-circle-o"></i> 交互</li>
+                      <li><i class="fa fa-check-circle-o"></i> 可行性分析</li>
+                      </ul>
+                      </div>
+                      </div
+                    h6 信息架构
+                  // PROCESS ICON #03
+                  .hi-icon.animated.fadeInUp.delay-400(style='cursor:default;')
+                    i.fa.fa-desktop
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <h5><span class="text_color">关于设计的简介</span></h5>
+                      <ul>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> UI设计</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> GUI视觉</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 完稿</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 切图</li>
+                      </ul>
+                      </div>
+                      </div
+                    h6 设计
+                  // PROCESS ICON #04
+                  .hi-icon.animated.fadeInUp.delay-600(style='cursor:default;')
+                    i.fa.fa-code
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <p>关于程序开发的简介</p>
+                      </div>
+                      </div
+                    h6 程序开发
+                  // PROCESS ICON #05
+                  .hi-icon.animated.fadeInUp.delay-800(style='cursor:default;')
+                    i.fa.fa-rocket
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <h5><span class="text_color">关于集成测试及发布的简介</span></h5>
+                      <ul>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 详解一</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 详解二</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 详解三</li>
+                      <li><span class="text_color"><i class="fa fa-check"></i></span> 详解四</li>
+                      </ul>
+                      </div>
+                      </div
+                    h6 集成测试及发布
+                  // PROCESS ICON #06
+                  .hi-icon.animated.fadeInUp.delay-1000(style='cursor:default;')
+                    i.fa.fa-bullhorn
+                    //
+                      div class="tooltip-desc">
+                      <span class="tooltip-arrow-down"></span>
+                      <div class="tooltip-content">
+                      <p>关于营销及代运营的简介</p>
+                      </div>
+                      </div
+                    h6 营销及代运营
+                // End hi-icon-wrap
+              // END: ICONS BORDER HOVER
+            // END: PARALLAX CONTENTS
+          // END box-overlay-pattern
+        // END: PARALLAX
+      // END: SERVICES SECTION
+      section#services.nav-boxes
+        #four.grey-section.nopaddingbottom.dark-text
+          // Title here
+          .section-title
+            h2
+              span.bold 社会化媒体营销及代运营
+            .divider.colored
+            h6.text-center
+              | 专业化的一流服务团队，通过微博/微信等自媒体营销平台的应用，为您的企业量身打造完善的营销体系。
+              // <a href="#" target="_blank">查看详情</a>
+          // BEGIN: VIDEO SECTION
+          #masterslider-video.master-slider.ms-skin-default
+            // Overlay pattern here
+            .overlay-pattern(style='opacity:0.8;')
+            // BEGIN: VIDEO DIV
+            .ms-slide.slide-video(data-delay='15')
+              img(src='masterslider/blank.gif', alt='', data-src='images/video-bg.jpg')
+            // BEGIN: VIDEO CONTENTS
+            .parallax-content.light-text
+              .container
+                // TITLE STYLE 1
+                .section-title
+                  h2.text-center 我们的服务策略
+                  .divider.colored
+                // Service #01
+                .col-xs-3.col-md-3.text-center.animated.flipInY
+                  a(href='#', onclick='return false;', target='_blank', style='cursor:default;')
+                    .border-box
+                      .icon-nofill
+                        i.glyphicons.gi-1
+                      h5 专注互动，打造口碑
+                      p 通过对品牌某产品或特性的营销，提升品牌的影响力与口碑，增加用户黏性，培养一批忠实粉丝。
+                // Service #02
+                .col-xs-3.col-md-3.text-center.animated.flipInY.delay-200
+                  a(href='#', onclick='return false;', target='_blank', style='cursor:default;')
+                    .border-box
+                      .icon-nofill
+                        i.glyphicons.gi-2
+                      h5 受众为舟，创意为帆
+                      p 聚合需求受众，精准营销。趣味性创意性并存，吸引更多关注度，增加品牌与用户的互动沟通。
+                // Service #03
+                .col-xs-3.col-md-3.text-center.animated.flipInY.delay-400
+                  a(href='#', onclick='return false;', target='_blank', style='cursor:default;')
+                    .border-box
+                      .icon-nofill
+                        i.glyphicons.gi-3
+                      h5 整合渠道，活用平台
+                      p 全方位构建渠道，充分利用现有资源，主动构建渠道，将可用平台有机结合，进行推广。
+                // Service #04
+                .col-xs-3.col-md-3.text-center.animated.flipInY.delay-600
+                  a(href='#', onclick='return false;', target='_blank', style='cursor:default;')
+                    .border-box
+                      .icon-nofill
+                        i.glyphicons.gi-4
+                      h5 迎合时机，事件营销
+                      p 巧妙地对新闻热点进行整合，为我所用。主动构建话题事件，利用事件进行营销。
+            // END: VIDEO CONTENTS
+          // END: VIDEO SECTION
+      // END: TEAM DIV
+      // BEGIN: SERVICES STYLE 2 "light-section" WITH "nopaddingbottom" AND "dark-text" TEXT
+      section#service-two.nav-boxes
+        #five.light-section.nopaddingbottom.dark-text
+          .container
+            // BEGIN: TITLE
+            .section-title
+              //
+                BEGIN WORD ROTATER
+                YOU CAN CHANGE THE EFFECTS AND THE WORDS ON paris.js line 27
+              h2
+                | 歆音科技为您提供
+                span#myWords.bold
+                |  的移动商务应用
+              .divider.colored
+              p.text-center 歆音科技移动商务应用通过快速打包技术，快速生成APP，无需上架，迅速高效，分享便捷。
+            // BEGIN: SERVICES ROW
+            .row
+              // SERVICES | ALIGN RIGHT
+              .col-xs-12.col-sm-4.service-two
+                // SERVICE #01
+                .service.animated.fadeInLeftBig
+                  .col-xs-12.col-md-10.np
+                    .text-right
+                      h5 2D产品展示
+                      p 实现产品360度旋转。客户可直观地、全方位了解产品；三维立体动画展示产品。加强视觉冲击力，加深产品印象！
+                  .col-xs-2.col-md-2.a-mobile
+                    .icon-nofill
+                      i.glyphicons.gi-2d
+                // SERVICE #02
+                .service.animated.fadeInLeftBig.delay-200
+                  .col-xs-12.col-md-10.np
+                    .text-right
+                      h5 离线浏览
+                      p 随时随地浏览企业信息，方便、实用、高效尽在歆音科技移动商务应用平台！
+                  .col-xs-2.col-md-2.a-mobile
+                    .icon-nofill
+                      i.glyphicons.gi-li
+                // SERVICE #03
+                .service.animated.fadeInLeftBig.delay-400
+                  .col-xs-12.col-md-10.np
+                    .text-right
+                      h5 文档下载
+                      p 企业的无限量数据库，轻轻点击，即可下载有用文档！
+                  .col-xs-2.col-md-2.a-mobile
+                    .icon-nofill
+                      i.glyphicons.gi-dl
+                // SERVICE #04
+                .service.animated.fadeInLeftBig.delay-600
+                  .col-xs-12.col-md-10.np
+                    .text-right
+                      h5 LBS 定位
+                      p 实时分享企业坐标信息，便于用户快速查找、搜寻、了解！
+                  .col-xs-2.col-md-2.a-mobile
+                    .icon-nofill
+                      i.glyphicons.gi-lbs
+              // END: SERVICES AR
+              // IPHONE IMAGE
+              .col-xs-12.col-sm-4(style='text-align: center;position: relative')
+                img#iphoneimg.animated.bounceInUp(src='images/iphone.png', alt='', style=' ')
+              script(type='text/javascript').
+                var a=document.getElementById("iphoneimg").clientWidth;
+                var b=window.innerWidth;
+                var c= (b-a)/2
+                $(document).ready(function(){
+                  $("#iphoneimg").css("margin-left","c.")
+                });
+              // SERVICES | ALIGN LEFT
+              .col-xs-12.col-sm-4.service-two.right
+                // SERVICE #01
+                .service.animated.fadeInRightBig
+                  .col-xs-2.col-md-2.a-mobile.rg
+                    .icon-nofill
+                      i.glyphicons.gi-as
+                  .col-xs-12.col-md-10.np
+                    .text-left
+                      h5 活动展示
+                      p 及时传递企业活动信息，保证用户参与度，活动顺利完成！
+                // SERVICE #02
+                .service.animated.fadeInRightBig.delay-200
+                  .col-xs-2.col-md-2.a-mobile.rg
+                    .icon-nofill
+                      i.glyphicons.gi-push
+                  .col-xs-12.col-md-10.np
+                    .text-left
+                      h5 推送消息
+                      p 推送企业最新消息，便于用户及时、快速获取
+                // SERVICE #03
+                .service.animated.fadeInRightBig.delay-400
+                  .col-xs-2.col-md-2.a-mobile.rg
+                    .icon-nofill
+                      i.glyphicons.gi-video
+                  .col-xs-12.col-md-10.np
+                    .text-left
+                      h5 视频展示
+                      p 提供用户更直观的感受，易于理解，加深用户记忆和信任
+                // SERVICE #04
+                .service.animated.fadeInRightBig.delay-600
+                  .col-xs-2.col-md-2.a-mobile.rg
+                    .icon-nofill
+                      i.glyphicons.gi-link
+                  .col-xs-12.col-md-10.np
+                    .text-left
+                      h5 一键链接
+                      p 输入链接地址，即可快速、全面获取相关信息
+              // END: SERVICES AL
+            // END: SERVICES ROW
+          // END: SERVICES CONTAINER
+      // end of pricing
+      // BEGIN: #CONTACT SECTION
+      section#contacts.nav-boxes
+        // START: PARALLAX CONTACTS
+        #parallax-contacts.parallax(style='background-image: url(images/6.jpg);text-align:center;')
+          .box-overlay-pattern
+            .overlay-pattern.soft.dark
+            // BEGIN: PARALLAX CONTENT
+            .parallax-content.smallpadding
+              // TITLE
+              .section-title.light
+                h2 联系我们
+                .divider.colored
+              // BEGIN: CONTACTS FORM
+              .container.bg-mobiles
+                // Begin Bg Mobiles
+                div
+                  // Other Contacts
+                  .col-xs-12.col-md-8
+                    .bgpattern
+                      .othercontacts
+                        h3
+                          span.text_color 联系方式
+                        ul.contacts
+                          li
+                            i.fa.fa-map-marker
+                            | 上海市浦东新区金高路1626号203室
+                          li
+                            i.fa.fa-envelope(style='left: -3px;')
+                            a(href='#') 10962421@qq.com
+                          li
+                            i.fa.fa-phone
+                            | 13816634559
+                  // Social
+                  .col-xs-12.col-md-4
+                    .bgpattern
+                      .othercontacts.social
+                        h3
+                          span.text_color 关注我们
+                        .dark
+                          //
+                            a href="" class="social facebook animated fadeInUp"></a>
+                            <a href="" class="social twitter animated fadeInUp delay-200"></a
+                          //
+                            a href="" class="social instagram animated fadeInUp delay-400"></a>
+                            <a href="" class="social vimeo animated fadeInUp delay-600"></a>
+                            <a href="" class="social skype animated fadeInUp delay-800"></a>
+                            <a href="" class="social e-mail animated fadeInUp delay-1000"></a
+                          a.social.wechat.animated.fadeInUp.delay-400(href='')
+                          //  .two-code
+                          a.social.weibo.animated.fadeInUp.delay-200(href='')
+                          //a.social.qq.animated.fadeInUp(href='http://wpa.qq.com/msgrd?v=3&uin=10962421&site=qq&menu=yes', target='_blank')
+                          a.social.qq.animated.fadeInUp(href='')
+                  // End Social
+                // End bg Mobiles
+              // end of .container
+            // end: .parallax-contant
+          // end .box-overlay-pattern
+        // END: PARALLAX #03
+      // END: #CONTACTS SECTION
+      // BEGIN BOTTOM FOOTER
+      section#bottom-footer
+        .container.text-center
+          p
+            | Copyright ©
+            span.text_color 歆音科技™
+            | 上海歆音信息科技有限公司  All rights reserved.
+      // END BOTTOM FOOTER
+    // END .everything
+    // GO TOP BUTTON
+    p#back-top
+      a(href='#home')
+    script.
+    // BEGIN: PROJECT LOADER
+    // ALL THE PROJECT DETAILS WILL BE LOADED IN THIS AREA
+    .projects-overlay.overlay-contentpush
+      #projects-loader
+      .projects-overlay-content
+        #pagecontent.container
+          .pageXofY
+            span.pageX
+            |  /
+            span.ofY
+          .scrollbar
+            .track
+              .thumb
+                .end
+          .viewport
+            .overview
+              #pageloader.container
+                // THE LOADED CONTENT WILL SHOW HERE
+        button.overlay-close(type='button') Close
+        nav.projects-navigation
+          .prev-proj
+            a(href='javascript:;') prev
+          .next-proj
+            a(href='javascript:;') next
+    // END
+    // LOAD OTHER SCRIPTS
+    script(src='js/paris.js', type='text/javascript', charset='utf-8')
+    script(type='text/javascript').
+      $(document).ready( function(){
+        $('#navbar-toggle').unbind('click');
+        $('#navbar-toggle').bind('click',function(){
+          alert("okok");
+          if( $('.navbar-collapse').hasClass('in') ){
+            $('.navbar-collapse').removeClass('in');
+            $(this).removeClass('collapsed');
+          }else{
+            $('.navbar-collapse').addClass('in');
+            $(this).addClass('collapsed');
+          }
+        });
+      });
